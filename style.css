@@ -36,7 +36,15 @@ main {
   letter-spacing: -1px;
   margin: 0 0 28px;
 }
-.emblem { width: 1.1em; height: 1.1em; flex-shrink: 0; }
+/* 공식 로고 이미지(207x60)에서 왼쪽 H 엠블럼만 잘라서 표시 (글자는 흰색이라 별도 텍스트 사용) */
+.emblem {
+  width: 76px;
+  height: 60px;
+  flex-shrink: 0;
+  background: url("images/logo.png") no-repeat left center;
+  background-size: auto 60px;
+}
+.logo-text { color: #113876; }
 
 #search-form { width: 100%; max-width: 584px; }
 
